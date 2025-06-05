@@ -1,0 +1,5 @@
+Run `npx prettier index.tsx` to see that it formats things in the wrong order.
+
+If you delete `tailwind.config.js`, remove the `@config` command, remove all dependencies, delete `node_modules`, run `npm cache verify` to garbage collect, then re-install the dependencies, imports will be sorted in the correct order. But as soon as you re-add the `@config` it breaks again.
+
+Note that this setup works fine for tailwind itself
